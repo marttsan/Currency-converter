@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Currency converter</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Currency Converter</h1>
+      </div>
+      <div class="date">2024-02-12</div>
+      <ul class="currencies">
+        <li class="currency base_currency" id="USD">
+          <img src="http://www.geonames.org/flags/l/us.gif" class="flag" />
+          <div class="info">
+            <p class="input">
+              <span class="currency_symbol">&#36;</span
+              ><input placeholder="0.0000" />
+            </p>
+            <p class="currency_name">USD - US Dollar</p>
+            <p class="base_currency_rate">1USD = 1USD</p>
+          </div>
+          <span class="close">&times;</span>
+        </li>
+        <li class="currency" id="JPY">
+          <img src="http://www.geonames.org/flags/l/jp.gif" class="flag" />
+          <div class="info">
+            <p class="input">
+              <span class="currency_symbol">&#165;</span
+              ><input placeholder="0.0000" />
+            </p>
+            <p class="currency_name">JP - Japanese Yen</p>
+            <p class="base_currency_rate">1USD = 111.0101 JPY</p>
+          </div>
+          <span class="close">&times;</span>
+        </li>
+        <li class="currency" id="GBP">
+          <img src="http://www.geonames.org/flags/l/uk.gif" class="flag" />
+          <div class="info">
+            <p class="input">
+              <span class="currency_symbol">&#163;</span
+              ><input placeholder="0.0000" />
+            </p>
+            <p class="currency_name">GB - British Pound</p>
+            <p class="base_currency_rate">1USD = 0.7805 GBP</p>
+          </div>
+          <span class="close">&times;</span>
+        </li>
+        <li class="currency" id="RUB">
+          <img src="http://www.geonames.org/flags/l/ru.gif" class="flag" />
+          <div class="info">
+            <p class="input">
+              <span class="currency_symbol">&#8381;</span
+              ><input placeholder="0.0000" />
+            </p>
+            <p class="currency_name">RU - Russian Ruble</p>
+            <p class="base_currency_rate">1USD = 66.9615 RUB</p>
+          </div>
+          <span class="close">&times;</span>
+        </li>
+        <li class="currency" id="CNY">
+          <img src="http://www.geonames.org/flags/l/cn.gif" class="flag" />
+          <div class="info">
+            <p class="input">
+              <span class="currency_symbol">&#20803;</span
+              ><input placeholder="0.0000" />
+            </p>
+            <p class="currency_name">CNY - Chinese Yuan</p>
+            <p class="base_currency_rate">1USD = 6.7756 CNY</p>
+          </div>
+          <span class="close">&times;</span>
+        </li>
+        <li class="currency" id="IND">
+          <img src="http://www.geonames.org/flags/l/in.gif" class="flag" />
+          <div class="info">
+            <p class="input">
+              <span class="currency_symbol">&#8377;</span
+              ><input placeholder="0.0000" />
+            </p>
+            <p class="currency_name">INR - Indian Rupee</p>
+            <p class="base_currency_rate">1USD = 71.1777 INR</p>
+          </div>
+          <span class="close">&times;</span>
+        </li>
+      </ul>
+      <ul class="add_curency_list"></ul>
+      <button class="add_currency_btn">Add Currency</button>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
